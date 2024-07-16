@@ -1,5 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: green;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -8,15 +16,47 @@
   background-color: green;
 }
 .card {
+  position: relative;
   width: 18rem;
   height: 24rem;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rga(0, 0, 0, 0.2);
 }
 
 .hearts,
 .diamonds {
   color: red;
+  font-size: 3em; /* Increase the font size */
+  line-height: 1.2; /* Adjust the line height if necessary */
+  padding: 10px; /* Adjust padding if necessary */
+  margin: 10px; /* Adjust margin if necessary */
 }
 .clubs,
 .spades {
   color: black;
+  font-size: 3em; /* Increase the font size */
+  line-height: 1.2; /* Adjust the line height if necessary */
+  padding: 10px; /* Adjust padding if necessary */
+  margin: 10px; /* Adjust margin if necessary */
+}
+.top-left-suit,
+.bottom-right-suit {
+  position: absolute;
+}
+.top-left-suit {
+  top: 10px;
+  left: 10px;
+}
+.bottom-right-suit {
+  bottom: 10px;
+  right: 10px;
+}
+.card-middle {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
