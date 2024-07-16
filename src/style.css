@@ -1,1 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+}
+.card {
+  width: 18rem;
+  height: 24rem;
+}
+
+.hearts,
+.diamonds {
+  color: red;
+}
+.clubs,
+.spades {
+  color: black;
+}
