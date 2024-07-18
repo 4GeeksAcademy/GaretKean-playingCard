@@ -11,6 +11,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   background-color: green;
@@ -52,6 +53,7 @@ body {
 .bottom-right-suit {
   bottom: 10px;
   right: 10px;
+  transform: rotate(180deg);
 }
 .card-middle {
   font-size: 5em;
@@ -60,3 +62,6 @@ body {
   align-items: center;
   margin: auto;
 }
+.card-button {
+  margin-top: 20px;
+} /* Space between card and button */
